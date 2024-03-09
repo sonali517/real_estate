@@ -618,12 +618,13 @@ section{
     }
     .header .navbar{
         position: absolute;
-        top: 100%; right: -100%;
-        background: #fff;
-        background: 30rem;
+        top: 100%; right: 100%;
+        width: 100%;
         height: calc(100vh - 9.5rem);
+        transform: translateY(-0%); /* Hide menu off-screen */
     }
     .header .navbar.active{
+        background-color: var(--main-color);
         right: 0;
     }
     .header .navbar a{
